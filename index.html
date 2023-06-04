@@ -4,42 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portofoliu, programare, frontend" />
+    <meta name="description" content="Acesta este un site de portofoliu" />
+    <meta name="author" content="Vasile Necula" />
+    <meta name="robots" content="index,follow" />
+
     <title>Vasile Necula</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="articol.html">Spre pagina de Articol</a><br />
-    <a href="https://www.google.ro/" target="_blan">Google</a><br />
-    <a href="mailto:neculav@gmail.com">Trimite e-mail</a><br />
-    <a href="tel:0745 000 000">Apeleaza</a><br />
+    <h1 id="mainTitle">Portofoliul meu</h1>
+    <p>Acesta este site-ul meu de prezentare</p>
 
-    <h1>Imagini si video</h1>
-    <a href="https://unsplash.com/" target="_blank"
-      ><img width="300" src="images/foto_test_html.jpg" alt="foto ptr test" />
-    </a>
-    <form>
-      <label for="firstname">Prenume</label>
-      <input type="text" id="firstname" name="firstname" /><br />
-      <label for="email">Adresa de email</label>
-      <input type="email" id="email" name="email" /><br />
-      <button type="submit">Trimite</button><br />
-      <input type="number" min="1" max="100" step="3" /><br />
-      <input type="datetime-local" /><br />
-      <input type="color" /><br />
-      <select id="variante" name="variante">
-        <option value="varianta1">Varianta 1</option>
-        <option value="varianta2">Varianta 2</option>
-        <option value="varianta3">Varianta 3</option>
-      </select>
-      <button type="submit">Trimite</button><br />
-      <textarea name="" id="" cols="30" rows="10"></textarea><br />
-      <input type="radio" name="luna" value="ianuarie" />Luna Ianuarie
-      <input type="radio" name="luna" value="februarie" />Luna Februarie
-      <input type="radio" name="luna" value="martie" />Luna Martie
-      <button type="submit">Trimite</button><br />
-      <input type="checkbox" name="zi_luni" value="luni" />Luni
-      <input type="checkbox" name="zi_luni" value="luni" />Luni
-      <input type="checkbox" name="zi_luni" value="luni" />Luni
-      <input type="checkbox" name="zi_luni" value="luni" />Luni
-    </form>
+    <section>
+      <h2 class="title-about-me">Despre mine</h2>
+      <p>Aici este descriere despre mine</p>
+    </section>
+    <section class="projects">
+      <h2>Proiecte</h2>
+      <ul>
+        <li>Proiect 1</li>
+        <li class="active">Proiect 2</li>
+        <li>Proiect 3</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+
+      Email: <input type="text" /><br />
+      Mesaj: <textarea rows="3" cols="10"></textarea><br />
+      <button>Trimite</button>
+    </section>
   </body>
 </html>
